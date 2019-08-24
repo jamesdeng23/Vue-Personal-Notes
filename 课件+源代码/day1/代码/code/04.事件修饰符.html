@@ -23,15 +23,15 @@
 <body>
   <div id="app">
 
-    <!-- 使用  .stop  阻止冒泡 -->
+    <!-- 使用  .stop  阻止冒泡，阻止外层的事件触发 -->
     <!-- <div class="inner" @click="div1Handler">
       <input type="button" value="戳他" @click.stop="btnHandler">
     </div> -->
 
-    <!-- 使用 .prevent 阻止默认行为 -->
+    <!-- 使用 .prevent 阻止默认行为，例子阻止的是链接跳转 -->
     <!-- <a href="http://www.baidu.com" @click.prevent="linkClick">有问题，先去百度</a> -->
 
-    <!-- 使用  .capture 实现捕获触发事件的机制 -->
+    <!-- 使用  .capture 实现捕获触发事件的机制，正常事件从里到外，如果需要从外到里，就需要外部捕获事件 -->
     <!-- <div class="inner" @click.capture="div1Handler">
       <input type="button" value="戳他" @click="btnHandler">
     </div> -->
